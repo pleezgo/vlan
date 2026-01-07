@@ -83,7 +83,7 @@ body {
 }
 
 .header p {
-    color: #808484;
+    color: #484C4C;
     margin-bottom: 20px;
 }
 
@@ -107,7 +107,7 @@ body {
 }
 
 .vlan-table th {
-    background: #8cabcb;
+    background: #345474;
     color: white;
     padding: 10px;
     text-align: left;
@@ -205,7 +205,7 @@ body {
 
 .port-info {
     font-size: 12px;
-    color: #7f8c8d;
+    color: #414748;
 }
 
 .audit-log {
@@ -222,7 +222,7 @@ body {
 
 .audit-time {
     font-size: 11px;
-    color: #7f8c8d;
+    color: #4D5656;
     margin-bottom: 3px;
 }
 
