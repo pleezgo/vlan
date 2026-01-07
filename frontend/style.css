@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #efeeee;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #8cabcb;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 8px;
+}
+
+.nav-menu {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.nav-menu li {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.nav-menu li:hover {
+    background: #4f6d8b;
+}
+
+.nav-menu li.active {
+    background: #46956d;
+}
+
+.device-item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    background: #dfe8bb;
+    cursor: pointer;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.status-online {
+    background: #04a848;
+}
+
+.status-offline {
+    background: #d01b07;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    color: #808484;
+    margin-bottom: 20px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #808484;
+    padding-bottom: 8px;
+}
+
+.vlan-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.vlan-table th {
+    background: #8cabcb;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.vlan-table td {
+    padding: 10px;
+    border-bottom: 1px solid #bfcacd;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    font-size: 12px;
+    background: #d4edda;
+    color: #155724;
+    border-radius: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-yellow {
+    background: #ead941;
+}
+
+.btn-green {
+    background: #27ae60;
+}
+
+.btn-gray {
+    background: #9faaa9;
+}
+
+.ports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.port-card {
+    border: 2px solid #ecf0f1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.port-card.selected {
+    border-color: #2394df;
+    background: #dbe0e2;
+}
+
+.port-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.port-info {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.audit-log {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.audit-entry {
+    padding: 12px;
+    border-left: 3px solid #8cabcb;
+    background: #f8f9fa;
+    margin-bottom: 8px;
+}
+
+.audit-time {
+    font-size: 11px;
+    color: #7f8c8d;
+    margin-bottom: 3px;
+}
+
+.audit-action {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.two-columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 1200px) {
+    .two-columns {
+        grid-template-columns: 1fr;
+    }
+}
